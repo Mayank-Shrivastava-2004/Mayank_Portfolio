@@ -11,7 +11,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
 
-[View Live Site](https://mayankshrivastava-dev.vercel.app) · [Report Issue](https://github.com/Mayank-Shrivastava-2004/Mayank_Portfolio/issues) · [Connect on LinkedIn](https://www.linkedin.com/in/mayankshrivastava-dev/)
+[View Live Site]([https://mayankshrivastava-dev.vercel.app](https://mayank-portfolio-chi-two.vercel.app)) · [Report Issue](https://github.com/Mayank-Shrivastava-2004/Mayank_Portfolio/issues) · [Connect on LinkedIn](https://www.linkedin.com/in/mayankshrivastava-dev/)
 
 </div>
 
