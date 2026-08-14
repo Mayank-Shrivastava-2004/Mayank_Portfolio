@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Mayank Shrivastava | Software Engineer & Full Stack Developer</title>
+    <meta name="description"
+        content="Mayank Shrivastava — Frontend Developer Intern at iTUX Solutions. Computer Science Engineer specializing in React.js, Next.js 15, Node.js, and the MERN Stack. B.Tech @ SATI Vidisha.">
+    <meta name="keywords"
+        content="Mayank Shrivastava, Software Engineer, Full Stack Developer, React.js, Next.js, MERN Stack, Java, React Native, Portfolio, iTUX Solutions, Infosys Springboard">
+    <meta name="author" content="Mayank Shrivastava">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mayank Shrivastava | Software Engineer & Full Stack Developer">
+    <meta property="og:description"
+        content="Frontend Developer Intern at iTUX Solutions. Specializes in Next.js 15, React, Node.js, and Spring Boot. Infosys Springboard Finalist.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mayank-shrivastava-2004.github.io/Mayank_Portfolio/">
+    <meta property="og:image" content="mayank.jpg">
+
+    <!-- Fonts: Fraunces (Display) + Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================== Scroll Progress ===================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ===================== Custom Cursor ===================== -->
+    <div class="cursor"></div>
+    <div class="cursor-outer"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar__inner">
+                <a href="#home" class="navbar__logo">Mayank<span>.</span></a>
+
+                <div class="navbar__links" id="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact" class="navbar__cta">Get in Touch</a>
+                </div>
+
+                <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="navbar__drawer" id="nav-drawer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero__inner">
+                <!-- Left: Content -->
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <div class="hero__eyebrow">
+                        <div class="hero__eyebrow-dot"><span></span></div>
+                        Frontend Developer Intern @ iTUX Solutions
+                    </div>
+
+                    <h1 class="hero__name">
+                        Mayank<br>
+                        <span class="grad">Shrivastava</span>
+                    </h1>
+
+                    <p class="hero__role">
+                        <span id="typing-text"></span>
+                    </p>
+
+                    <p class="hero__desc">
+                        A results-driven <strong style="color:#e8ecf4;font-weight:600;">Computer Science Engineer</strong>
+                        building high-performance applications with <strong style="color:#e8ecf4;font-weight:600;">Next.js 15, React, and Node.js</strong>.
+                        Currently shipping production features at iTUX Solutions.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i> View Work
+                        </a>
+                        <a href="#" class="btn btn-outline" id="resume-btn" target="_blank" rel="noopener">
+                            <i class="fas fa-file-lines"></i> Resume
+                        </a>
+                        <a href="https://github.com/Mayank-Shrivastava-2004" target="_blank" rel="noopener"
+                            class="btn btn-ghost">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+
+                    <div class="hero__social">
+                        <a href="https://www.linkedin.com/in/mayankshrivastava-dev/" target="_blank"
+                            rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Mayank-Shrivastava-2004" target="_blank" rel="noopener"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:mayankshrivastava85994@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stat-item">
+                            <span class="hero__stat-num">4+</span>
+                            <span class="hero__stat-label">Projects</span>
+                        </div>
+                        <div class="hero__stat-sep"></div>
+                        <div class="hero__stat-item">
+                            <span class="hero__stat-num">8.07</span>
+                            <span class="hero__stat-label">CGPA</span>
+                        </div>
+                        <div class="hero__stat-sep"></div>
+                        <div class="hero__stat-item">
+                            <span class="hero__stat-num">3</span>
+                            <span class="hero__stat-label">Internships</span>
+                        </div>
+                        <div class="hero__stat-sep"></div>
+                        <div class="hero__stat-item">
+                            <span class="hero__stat-num">5+</span>
+                            <span class="hero__stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Photo -->
+                <div class="hero__photo-wrap" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero__photo-frame">
+                        <img src="mayank.jpg" alt="Mayank Shrivastava — Software Engineer">
+                        <div class="hero__photo-label">B.Tech CSE · SATI Vidisha</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="about__grid">
+                <!-- Left: Text -->
+                <div data-aos="fade-right">
+                    <span class="section-label">Professional Background</span>
+                    <h2 class="section-title">Engineering with<br><em>Precision & Passion</em></h2>
+
+                    <div style="margin-top:2rem;">
+                        <p style="color:var(--clr-text-muted);font-size:1.05rem;line-height:1.85;margin-bottom:1.2rem;">
+                            I'm a Computer Science Engineer currently working as a
+                            <strong style="color:var(--clr-text);font-weight:600;">Frontend Developer Intern at iTUX Solutions</strong>,
+                            shipping production features for a live Next.js 15 e-commerce platform serving real users.
+                        </p>
+                        <p style="color:var(--clr-text-muted);font-size:1.05rem;line-height:1.85;">
+                            With a strong foundation in <strong style="color:var(--clr-text);font-weight:600;">Java, DSA, and full-stack
+                            development</strong>, I build end-to-end applications from intelligent parking systems and
+                            ERP platforms to e-commerce solutions. I combine algorithmic thinking with modern
+                            engineering to create software that's performant and maintainable.
+                        </p>
+                    </div>
+
+                    <div class="about__highlights">
+                        <div class="about__highlight-item">
+                            <span class="about__highlight-label">B.Tech Degree</span>
+                            <span class="about__highlight-value">Computer Science (Honors)</span>
+                        </div>
+                        <div class="about__highlight-item">
+                            <span class="about__highlight-label">Institution</span>
+                            <span class="about__highlight-value">SATI Vidisha (2023–2026)</span>
+                        </div>
+                        <div class="about__highlight-item">
+                            <span class="about__highlight-label">CGPA</span>
+                            <span class="about__highlight-value">8.07 / 10.0 (Honors)</span>
+                        </div>
+                        <div class="about__highlight-item">
+                            <span class="about__highlight-label">Diploma</span>
+                            <span class="about__highlight-value">CS Honors, CGPA 8.38</span>
+                        </div>
+                        <div class="about__highlight-item">
+                            <span class="about__highlight-label">Current Role</span>
+                            <span class="about__highlight-value">Frontend Dev @ iTUX Solutions</span>
+                        </div>
+                        <div class="about__highlight-item">
+                            <span class="about__highlight-label">Location</span>
+                            <span class="about__highlight-value">Madhya Pradesh, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Stat Cards -->
+                <div class="about__stats" data-aos="fade-left" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-card__icon"><i class="fas fa-code"></i></div>
+                        <div class="stat-card__num">4+</div>
+                        <div class="stat-card__desc">Full-stack projects built end-to-end</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__icon"><i class="fas fa-medal"></i></div>
+                        <div class="stat-card__num">8.07</div>
+                        <div class="stat-card__desc">B.Tech CGPA across all semesters</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="stat-card__num">3</div>
+                        <div class="stat-card__desc">Industry internships completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__icon"><i class="fas fa-certificate"></i></div>
+                        <div class="stat-card__num">5+</div>
+                        <div class="stat-card__desc">Professional certifications earned</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div style="text-align:center;margin-bottom:4rem;" data-aos="fade-up">
+                <span class="section-label" style="justify-content:center;">Technical Stack</span>
+                <h2 class="section-title">Full Stack <em>Arsenal</em></h2>
+            </div>
+
+            <div class="skills__grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                <!-- Languages -->
+                <div class="skills__category" data-aos="fade-up">
+                    <div class="skills__cat-header">
+                        <div class="skills__cat-icon"><i class="fas fa-terminal"></i></div>
+                        <span class="skills__cat-title">Languages</span>
+                    </div>
+                    <div class="skills__bars">
+                        <div>
+                            <div class="skill-bar__info">
+                                <span class="skill-bar__name">JavaScript</span>
+                                <span class="skill-bar__pct">88%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-bar__info">
+                                <span class="skill-bar__name">TypeScript</span>
+                                <span class="skill-bar__pct">80%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-bar__info">
+                                <span class="skill-bar__name">Java</span>
+                                <span class="skill-bar__pct">90%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-bar__info">
+                                <span class="skill-bar__name">Python</span>
+                                <span class="skill-bar__pct">72%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="72"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skill-bar__info">
+                                <span class="skill-bar__name">C</span>
+                                <span class="skill-bar__pct">68%</span>
+                            </div>
+                            <div class="skill-bar__track">
+                                <div class="skill-bar__fill" data-width="68"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skills__category" data-aos="fade-up" data-aos-delay="80">
+                    <div class="skills__cat-header">
+                        <div class="skills__cat-icon" style="background:rgba(167,139,250,0.12);color:var(--clr-purple)">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <span class="skills__cat-title">Frontend</span>
+                    </div>
+                    <div class="skills__tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js 15</span>
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Redux Toolkit</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Responsive UI</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills__category" data-aos="fade-up" data-aos-delay="160">
+                    <div class="skills__cat-header">
+                        <div class="skills__cat-icon"><i class="fas fa-server"></i></div>
+                        <span class="skills__cat-title">Backend</span>
+                    </div>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">JWT Auth</span>
+                        <span class="skill-tag">Socket.io</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skills__category" data-aos="fade-up" data-aos-delay="240">
+                    <div class="skills__cat-header">
+                        <div class="skills__cat-icon" style="background:rgba(230,152,76,0.12);color:var(--clr-accent)">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="skills__cat-title">Databases</span>
+                    </div>
+                    <div class="skills__tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Firebase Firestore</span>
+                        <span class="skill-tag">Relational Schema</span>
+                        <span class="skill-tag">Security Rules</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skills__category" data-aos="fade-up" data-aos-delay="320" style="grid-column: span 2;">
+                    <div class="skills__cat-header">
+                        <div class="skills__cat-icon" style="background:rgba(167,139,250,0.12);color:var(--clr-purple)">
+                            <i class="fas fa-screwdriver-wrench"></i>
+                        </div>
+                        <span class="skills__cat-title">Developer Tools & Platforms</span>
+                    </div>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">GitLab</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Expo Go</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">Clerk</span>
+                        <span class="skill-tag">Razorpay</span>
+                        <span class="skill-tag">DSA</span>
+                        <span class="skill-tag">OOP Design</span>
+                        <span class="skill-tag">Agile / Scrum</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div style="margin-bottom:4rem;" data-aos="fade-up">
+                <span class="section-label">The Journey</span>
+                <h2 class="section-title">Work <em>Experience</em></h2>
+            </div>
+
+            <div class="experience__timeline">
+
+                <!-- iTUX Solutions (Current) -->
+                <div class="exp-item" data-aos="fade-up">
+                    <span class="exp-item__date">Apr. 2026 – Present</span>
+                    <h3 class="exp-item__company">iTUX Solutions<br><span style="font-size:1.1rem;color:var(--clr-text-muted);">Remote</span></h3>
+                    <p class="exp-item__role">Frontend Developer Intern</p>
+                    <div class="exp-item__bullets">
+                        <div class="exp-item__bullet">
+                            Engineered production features for a <strong style="color:#e8ecf4;">Next.js 15</strong> e-commerce
+                            platform using React, TypeScript, and Tailwind CSS, contributing to a live codebase
+                            serving real users.
+                        </div>
+                        <div class="exp-item__bullet">
+                            Built dynamic pricing configuration modals applying complex promotional rules in real time,
+                            member-role management controls, <strong style="color:#e8ecf4;">Clerk authentication</strong>,
+                            and <strong style="color:#e8ecf4;">Razorpay payment</strong> integrations.
+                        </div>
+                        <div class="exp-item__bullet">
+                            Maintained reusable components, diagnosed and resolved rendering bugs, and delivered
+                            iterative releases through <strong style="color:#e8ecf4;">GitLab-based Agile</strong> sprint cycles.
+                        </div>
+                        <div class="exp-item__bullet">
+                            Protected internal seller workflows by injecting safe item-deletion constraints tied to
+                            database structural parameters.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infosys Springboard -->
+                <div class="exp-item" data-aos="fade-up" data-aos-delay="80">
+                    <span class="exp-item__date">Dec. 2025 – Feb. 2026</span>
+                    <h3 class="exp-item__company">Infosys Springboard<br><span style="font-size:1.1rem;color:var(--clr-text-muted);">Virtual Internship 6.0 · Remote</span></h3>
+                    <p class="exp-item__role">Full-Stack Intern — MERN / React Native</p>
+                    <div class="exp-item__bullets">
+                        <div class="exp-item__bullet">
+                            Collaborated across the stack in the end-to-end Agile architecture of a distributed smart
+                            parking platform spanning <strong style="color:#e8ecf4;">frontend, backend, and real-time</strong> layers.
+                        </div>
+                        <div class="exp-item__bullet">
+                            Designed and implemented <strong style="color:#e8ecf4;">RESTful micro-APIs</strong> and
+                            optimized relational database schemas to support high-throughput spot-management operations.
+                        </div>
+                        <div class="exp-item__bullet">
+                            Integrated real-time communication layers via <strong style="color:#e8ecf4;">Socket.io</strong>,
+                            accurately managing 500+ active parking locations and concurrent user sessions.
+                        </div>
+                        <div class="exp-item__bullet">
+                            Contributed to routine code optimizations, system test planning, and functional feature
+                            validation across Agile sprint cycles.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MANIT Bhopal -->
+                <div class="exp-item" data-aos="fade-up" data-aos-delay="160">
+                    <span class="exp-item__date">Jun. 2025 – Jul. 2025</span>
+                    <h3 class="exp-item__company">Maulana Azad National<br>Institute of Technology<span style="font-size:1.1rem;color:var(--clr-text-muted);"> · Bhopal</span></h3>
+                    <p class="exp-item__role">Machine Learning Intern</p>
+                    <div class="exp-item__bullets">
+                        <div class="exp-item__bullet">
+                            Engineered a custom <strong style="color:#e8ecf4;">CNN facial emotion recognition pipeline</strong>
+                            using TensorFlow on the FER-2013 dataset for 7-class classification, under the guidance of
+                            Dr. Jitendra Adhikari.
+                        </div>
+                        <div class="exp-item__bullet">
+                            Integrated <strong style="color:#e8ecf4;">OpenCV</strong> real-time tracking with localized
+                            data augmentation techniques to control overfitting and improve model robustness.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div style="text-align:center;margin-bottom:4rem;" data-aos="fade-up">
+                <span class="section-label" style="justify-content:center;">Engineering Exhibits</span>
+                <h2 class="section-title">Selected <em>Projects</em></h2>
+            </div>
+
+            <div class="projects__grid" style="grid-template-columns: repeat(2, 1fr);">
+
+                <!-- Naisha Naturals -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-card__img">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=800&auto=format&fit=crop"
+                            alt="Naisha Naturals E-Commerce Platform">
+                        <div class="project-card__overlay">
+                            <span class="project-card__tag">Live Production</span>
+                            <span class="project-card__tag" style="background:var(--clr-purple);">Apr 2026 – Present</span>
+                        </div>
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Naisha Naturals</h3>
+                        <p class="project-card__desc">E-Commerce Web Platform engineered with a synchronized, formula-driven Price Modal UI computing complex promotional pricing rules in real time. Features Clerk authentication, Razorpay payment flows, and safe item-deletion constraints tied to database structural parameters.</p>
+                        <div class="project-card__footer">
+                            <div class="project-card__tech">
+                                <span class="tech-chip">Next.js 15</span>
+                                <span class="tech-chip">TypeScript</span>
+                                <span class="tech-chip">MongoDB</span>
+                                <span class="tech-chip">Clerk</span>
+                                <span class="tech-chip">Razorpay</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/Mayank-Shrivastava-2004" target="_blank" rel="noopener"
+                                    class="project-card__link" aria-label="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ParkEase -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="80">
+                    <div class="project-card__img">
+                        <img src="parkease.png" alt="ParkEase Smart Parking Platform">
+                        <div class="project-card__overlay">
+                            <span class="project-card__tag">MERN + Spring Boot</span>
+                            <span class="project-card__tag" style="background:var(--clr-purple);">Dec 2025 – Feb 2026</span>
+                        </div>
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">ParkEase — Smart Parking Platform</h3>
+                        <p class="project-card__desc">Scalable cross-platform smart parking application with live spot tracking, custom map selection, and route assistance. Features Spring Boot + MySQL backend, geospatial Node.js services, JWT authentication, and Socket.io real-time flows managing 500+ active locations.</p>
+                        <div class="project-card__footer">
+                            <div class="project-card__tech">
+                                <span class="tech-chip">React Native</span>
+                                <span class="tech-chip">Spring Boot</span>
+                                <span class="tech-chip">MySQL</span>
+                                <span class="tech-chip">Socket.io</span>
+                                <span class="tech-chip">Node.js</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/Mayank-Shrivastava-2004" target="_blank" rel="noopener"
+                                    class="project-card__link" aria-label="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insta-School -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="160">
+                    <div class="project-card__img">
+                        <img src="erp.png" alt="Insta-School Cross-Platform ERP">
+                        <div class="project-card__overlay">
+                            <span class="project-card__tag" style="background:var(--clr-purple);">Mobile ERP</span>
+                            <span class="project-card__tag">Jan 2025 – Apr 2026</span>
+                        </div>
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Insta-School — Cross-Platform ERP</h3>
+                        <p class="project-card__desc">Modular cross-platform ERP workspace streamlining notifications and access links for academic boards. Responsive component states guaranteeing crisp interface scaling across Android and iOS, with persistent Firebase security rules and direct Firestore hooks for zero-lag messaging feeds.</p>
+                        <div class="project-card__footer">
+                            <div class="project-card__tech">
+                                <span class="tech-chip">React Native</span>
+                                <span class="tech-chip">Firebase</span>
+                                <span class="tech-chip">Firestore</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/Mayank-Shrivastava-2004" target="_blank" rel="noopener"
+                                    class="project-card__link" aria-label="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facial Emotion Recognition -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="240">
+                    <div class="project-card__img">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=800&auto=format&fit=crop"
+                            alt="Facial Emotion Recognition System">
+                        <div class="project-card__overlay">
+                            <span class="project-card__tag">Deep Learning</span>
+                            <span class="project-card__tag" style="background:var(--clr-purple);">Jun – Jul 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Facial Emotion Recognition System</h3>
+                        <p class="project-card__desc">Deep CNN classification model resolving 7 human emotion categories through layered convolutional filters on the FER-2013 dataset. Applied image-frame normalization, OpenCV real-time tracking, and selective neural-dropout techniques to maximize generalization accuracy.</p>
+                        <div class="project-card__footer">
+                            <div class="project-card__tech">
+                                <span class="tech-chip">Python</span>
+                                <span class="tech-chip">TensorFlow</span>
+                                <span class="tech-chip">OpenCV</span>
+                                <span class="tech-chip">Keras</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/Mayank-Shrivastava-2004" target="_blank" rel="noopener"
+                                    class="project-card__link" aria-label="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section section-alt">
+        <div class="container">
+            <div style="margin-bottom:4rem;" data-aos="fade-up">
+                <span class="section-label">Academic Background</span>
+                <h2 class="section-title">Education &amp; <em>Qualifications</em></h2>
+            </div>
+
+            <div class="experience__timeline">
+
+                <!-- B.Tech -->
+                <div class="exp-item" data-aos="fade-up">
+                    <span class="exp-item__date">Aug. 2023 – Jun. 2026</span>
+                    <h3 class="exp-item__company">Samrat Ashok Technological Institute</h3>
+                    <p class="exp-item__role">B.Tech · Computer Science (Honors) · CGPA: 8.07</p>
+                    <div class="exp-item__bullets">
+                        <div class="exp-item__bullet">Vidisha, Madhya Pradesh</div>
+                        <div class="exp-item__bullet">Specialization in Full-Stack Development, DSA, and OOP</div>
+                        <div class="exp-item__bullet">Active participant in hackathons and industry internship programs</div>
+                    </div>
+                </div>
+
+                <!-- Diploma -->
+                <div class="exp-item" data-aos="fade-up" data-aos-delay="80">
+                    <span class="exp-item__date">Sep. 2020 – Jul. 2023</span>
+                    <h3 class="exp-item__company">Indira Gandhi Government Polytechnic College</h3>
+                    <p class="exp-item__role">Diploma · Computer Science (Honors) · CGPA: 8.38</p>
+                    <div class="exp-item__bullets">
+                        <div class="exp-item__bullet">Chhindwara, Madhya Pradesh</div>
+                        <div class="exp-item__bullet">Foundation in programming, networking, and database management</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section">
+        <div class="container">
+            <div style="text-align:center;margin-bottom:4rem;" data-aos="fade-up">
+                <span class="section-label" style="justify-content:center;">Verified Credentials</span>
+                <h2 class="section-title">Professional <em>Certifications</em></h2>
+            </div>
+
+            <div class="certs__grid">
+                <div class="cert-card" data-aos="fade-up">
+                    <div class="cert-card__icon"><i class="fab fa-java"></i></div>
+                    <h4 class="cert-card__title">Java Foundation Certification</h4>
+                    <span class="cert-card__issuer">Infosys Springboard</span>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="60">
+                    <div class="cert-card__icon" style="color:var(--clr-purple)"><i class="fas fa-shield-halved"></i></div>
+                    <h4 class="cert-card__title">DevOps Certificate</h4>
+                    <span class="cert-card__issuer">Oracle Cloud Infrastructure</span>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="120">
+                    <div class="cert-card__icon"><i class="fas fa-layer-group"></i></div>
+                    <h4 class="cert-card__title">MERN Stack Certificate</h4>
+                    <span class="cert-card__issuer">Sheriyans Coding School</span>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="180">
+                    <div class="cert-card__icon" style="color:var(--clr-purple)"><i class="fas fa-brain"></i></div>
+                    <h4 class="cert-card__title">Automated Facial Emotion Recognition Using Deep Learning</h4>
+                    <span class="cert-card__issuer">MANIT Bhopal · 2025</span>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="240">
+                    <div class="cert-card__icon" style="color:var(--clr-accent)"><i class="fas fa-network-wired"></i></div>
+                    <h4 class="cert-card__title">Programming Essentials in C</h4>
+                    <span class="cert-card__issuer">Cisco</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="contact__grid">
+                <!-- Left -->
+                <div data-aos="fade-right">
+                    <span class="section-label">Let's Collaborate</span>
+                    <h2 class="contact__heading">Let's build<br>the <em>Future.</em></h2>
+                    <p class="contact__sub">
+                        I'm currently open to full-time software engineering roles, freelance projects,
+                        and research collaborations. Let's build something meaningful together.
+                    </p>
+
+                    <div class="contact__links">
+                        <a href="mailto:mayankshrivastava85994@gmail.com" class="contact__link-item">
+                            <div class="contact__link-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div style="font-size:0.68rem;color:var(--clr-text-dim);letter-spacing:0.1em;text-transform:uppercase;font-weight:700;margin-bottom:0.2rem;">Email</div>
+                                mayankshrivastava85994@gmail.com
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mayankshrivastava-dev/" target="_blank"
+                            rel="noopener" class="contact__link-item">
+                            <div class="contact__link-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <div style="font-size:0.68rem;color:var(--clr-text-dim);letter-spacing:0.1em;text-transform:uppercase;font-weight:700;margin-bottom:0.2rem;">LinkedIn</div>
+                                mayankshrivastava-dev
+                            </div>
+                        </a>
+                        <a href="https://github.com/Mayank-Shrivastava-2004" target="_blank" rel="noopener"
+                            class="contact__link-item">
+                            <div class="contact__link-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <div style="font-size:0.68rem;color:var(--clr-text-dim);letter-spacing:0.1em;text-transform:uppercase;font-weight:700;margin-bottom:0.2rem;">GitHub</div>
+                                Mayank-Shrivastava-2004
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Form (Formspree) -->
+                <div data-aos="fade-left">
+                    <form class="contact__form" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="What's this about?">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="6"
+                                placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+                        <div class="form-status" id="form-status"></div>
+                        <button type="submit" class="btn btn-primary" id="form-submit"
+                            style="width:100%;justify-content:center;border-radius:10px;padding:1rem;">
+                            <i class="fas fa-paper-plane"></i>
+                            <span id="form-btn-text">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#home" class="footer__logo">Mayank<span>.</span></a>
+                <p class="footer__copy">© 2026 Mayank Shrivastava · Designed &amp; Engineered with care.</p>
+                <div class="footer__links">
+                    <a href="https://github.com/Mayank-Shrivastava-2004" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mayankshrivastava-dev/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="#home">Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
