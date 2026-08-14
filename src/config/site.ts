@@ -25,7 +25,7 @@ export const siteConfig = {
   email: "mayankshrivastava85994@gmail.com",
 
   // Site metadata
-  url: "https://mayank-shrivastava-2004.github.io/Mayank_Portfolio",
+  url: "https://mayank-portfolio-chi-two.vercel.app",
   description:
     "Mayank Shrivastava — Frontend Developer Intern at iTUX Solutions. Computer Science Engineer specializing in Next.js 15, React, Node.js, and the MERN Stack.",
 } as const;

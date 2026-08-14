@@ -16,6 +16,9 @@
 </div>
 ---
 
+## 🚀 Live Demo
+Check out my live portfolio here: https://mayank-portfolio-chi-two.vercel.app
+
 ## 📖 Overview
 
 A modern, high-performance portfolio engineered with **Next.js 15 App Router**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**. Built with a human-crafted editorial dark mode aesthetic, full-stack API capabilities, dynamic Google Drive resume syncing, and an automated **Nodemailer Gmail SMTP** email dispatch system.
